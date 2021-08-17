@@ -6,7 +6,7 @@ public class Conta {
 	private float saldo;
 	private boolean status;
 	
-	//Teste 2
+	//Teste 20
 	
 	public void estadoAtual() {
 		System.out.println("===========================");
@@ -32,7 +32,7 @@ public class Conta {
 		if (this.getSaldo() > 0) {
 			System.out.println("Retire todo o dinheiro da conta!");
 		} else if (this.getSaldo() < 0) {
-					System.out.println("Conta em débito!");
+					System.out.println("Conta em dÃ©bito!");
 			} else {
 					this.setStatus(false);
 					System.out.println("Conta fechada com sucesso!");
@@ -42,10 +42,10 @@ public class Conta {
 	public void depositar(float valor) {
 		if (this.isStatus()) {
 			this.setSaldo(this.getSaldo() + valor);
-			System.out.println("Depósito realizado com sucesso!");
+			System.out.println("DepÃ³sito realizado com sucesso!");
 		}
 		else
-			System.out.println("Impossível depositar em uma conta fechada.");
+			System.out.println("ImpossÃ­vel depositar em uma conta fechada.");
 	}
 	
 	public void sacar(float valor) {
@@ -58,7 +58,7 @@ public class Conta {
 				System.out.println("Saldo Insuficiente para saque!");
 		}
 		else
-			System.out.println("Impossível sacar de uma conta fechada.");
+			System.out.println("ImpossÃ­vel sacar de uma conta fechada.");
 	}
 	
 	public void mensalidade() {
@@ -77,7 +77,7 @@ public class Conta {
 			}
 		}
 		else
-			System.out.println("Impossível pagar de uma conta fechada.");
+			System.out.println("ImpossÃ­vel pagar de uma conta fechada.");
 	}
 	
 	//Construtor
@@ -87,7 +87,7 @@ public class Conta {
 	}
 	//double saldo, boolean status
 	
-	//Número da Conta
+	//NÃºmero da Conta
 	public int getNumeroDaConta() {
 		return numeroDaConta;
 	}
